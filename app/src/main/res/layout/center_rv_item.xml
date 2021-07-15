@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Center Name"
+            android:padding="3dp"
+            android:textColor="@color/black"
+            android:layout_margin="3dp"
+            android:drawableLeft="@drawable/ic_hospital"
+            android:drawablePadding="4dp"
+            android:id="@+id/idTVCenterName"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Center Location"
+            android:padding="3dp"
+            android:layout_below="@id/idTVCenterName"
+            android:textColor="@color/black"
+            android:layout_margin="3dp"
+            android:drawableLeft="@drawable/ic_location"
+            android:drawablePadding="4dp"
+            android:id="@+id/idTVCenterLocation"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Center Timings"
+            android:padding="3dp"
+            android:layout_below="@id/idTVCenterLocation"
+            android:textColor="@color/black"
+            android:layout_margin="3dp"
+            android:drawableLeft="@drawable/ic_timings"
+            android:drawablePadding="4dp"
+            android:id="@+id/idTVCenterTimings"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:id="@+id/LL"
+            android:layout_margin="3dp"
+            android:layout_below="@+id/idTVCenterTimings">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Vaccine Name"
+                android:drawableLeft="@drawable/ic_vaccine"
+                android:layout_margin="3dp"
+                android:drawablePadding="4dp"
+                android:textColor="@color/black"
+                android:id="@+id/idTVVaccineName"
+                >
+            </TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Fees"
+
+                android:layout_margin="3dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:drawablePadding="4dp"
+                android:textColor="@color/black"
+                android:id="@+id/idTVVaccineFees"
+                >
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_margin="3dp"
+            android:layout_below="@+id/LL">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Age Limit"
+                android:layout_margin="3dp"
+                android:drawablePadding="3dp"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:id="@+id/idTVAgeLimit"
+                >
+            </TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Avaliablity"
+                android:layout_gravity="center"
+                android:layout_margin="3dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:drawablePadding="4dp"
+                android:textColor="@color/black"
+                android:id="@+id/idTVAvaliablity"
+                >
+            </TextView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

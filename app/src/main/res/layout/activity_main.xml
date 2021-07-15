@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Pin Code "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:paddingTop="10dp"/>
+
+
+    <EditText
+        android:id="@+id/idEdtPinCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:hint="Enter Pin Code"
+        android:layout_below="@+id/textenter"
+
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/idBtnSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_round"
+        app:backgroundTint="@color/teal_700"
+        android:padding="2dp"
+        android:layout_below="@+id/idEdtPinCode"
+
+        android:layout_centerHorizontal="true"
+        android:text="Search" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idRVcenters"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/idBtnSearch"
+        />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/idPBLoading"
+        android:layout_centerInParent="true"
+        />
+
+
+
+
+</RelativeLayout>
